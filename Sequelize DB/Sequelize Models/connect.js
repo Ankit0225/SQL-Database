@@ -7,12 +7,22 @@ const db = new Sequelize('sampledb', 'sampleuser', 'samplepass', {
 
 })
 
-const Man = db.define('man',{
-    name:DataTypes.STRING(70),
-    age: DataTypes.INTEGER(10),
-    city: DataTypes.STRING(100)
+const Student = db.define('Student',{
+    name: {
+        type: DataTypes.STRING(70),
+        allowNull: false
+    },
+    age: {
+        type: DataTypes.INTEGER(10),
+        allowNull: false,
+        default: -1
+    },
+    city: {
+        type:DataTypes.STRING(100),
+        allowNull: false 
+    }
 });
 
-db.sync()
+db.sync({alter: true})
 .then(() => console.log('Database Synced'))
 .catch(console.error)
