@@ -7,12 +7,20 @@ const task = async () => {
 
     const students = await Student.findAll({
     //  what you what to find write here
-        /* Example: 
-      where: {age: 13},
+      /*  //  Example: 
+      where: {
+        age: {
+        $or: {  //or operator
+          $lt: 12,  //  lt =less than
+          $gt: 19      // gt = greater than
+          
+        }
+      }
+    },
        order: [
           ['name', 'ASC'],
           ['age', 'DESC']
-       ] */
+       ] */ 
       //  By writing these you will get all related datas 
     });
     students.forEach(student => console.log(`
