@@ -7,7 +7,7 @@ const task = async () => {
 
     const students = await Student.findAll({
     //  what you what to find write here
-      /*  //  Example: 
+      /*   Example: 
       where: {
         age: {
         $or: {  //or operator
