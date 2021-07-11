@@ -7,13 +7,13 @@ const Course =  db.define('course' , {
         type: DataTypes.STRING(2),
         primaryKey: true
     },
-    name: DataTypes.STRING(20)
+    name: DataTypes.STRING(30),
 })
 
 const Teacher = db.define('teacher', {
     name: {
         type: DataTypes.STRING(40),
-        allowNull: false
+        allowNull: false  // allowNull Represents character
     }
 })
 
@@ -48,7 +48,7 @@ const Batch =  db.define('batch' , {
         type: DataTypes.STRING(2),
         primaryKey: true
     },
-    year: DataTypes.INTEGER(4),
+    // year: DataTypes.INTEGER(4),
     start: DataTypes.DATE,
     end: DataTypes.DATE
 })
