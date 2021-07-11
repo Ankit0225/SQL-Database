@@ -8,7 +8,7 @@ $ mysql -u root -p
 ```
 
 
-INSIDE MySQL shell, craete database. user and grant rights
+INSIDE MySQL shell, create database. user and grant rights
 ```
 mysql-sql
 
