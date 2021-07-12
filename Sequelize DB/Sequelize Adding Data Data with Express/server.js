@@ -14,6 +14,7 @@ app.get('/index', async (req, res) => {
       const courses = await Course.findAll()
       const seasons = await Season.findAll()
       const years = [2021,2022,2023,2024,2025]
+
     res.render('index', {
         centers, courses, seasons, years
     })
