@@ -14,4 +14,4 @@ db
     console.error('Unable to Connect Database', err);
  });
 
- module.exports = {db} 
+ module.exports = {db}
