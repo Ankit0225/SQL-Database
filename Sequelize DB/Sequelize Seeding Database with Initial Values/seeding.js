@@ -37,11 +37,7 @@ const seed = async() => {
         ],{
             ignoreDuplicates: true
         })
-        await Batch.bulkCreate([
-          {id: ''}
-        ],{
-            ignoreDuplicates: true
-        })
+      
     }
     catch (err){
 
